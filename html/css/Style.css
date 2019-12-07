@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+
+}
+#main-cont {
+    height: calc(100vh - 50px);
+    width: 100vw;
+    max-width: 400px;
+    min-width: 320px;
+    min-height: 520px;
+    margin: auto;
+    padding: 0 30px 0 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+#footer-cont {
+    height: 50px;
+    Width: 100vw;
+    background-color:rgb(62, 46, 34);
+    color: white;
+    text-align: center;
+    font: 14px Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+#footer-cont p {
+    line-height: 50px;
+
+}
+#logo {
+    width: 100%;
+    max-height: 170px;
+}
+.info-cont {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font: 22px Helvetica, Sans-serif;
+    font-weight: bold;
+    line-height: 50px;
+    background:linear-gradient(to right, rgba(104,60,17,1) 0%, rgba(219,209,199,0.4) 51%, rgba(104,60,17,1) 100%);
+    opacity: 0.8;
+    border-radius: 20px;
+    margin: 5px 0 5px 0;
+}
+.actions-cont {
+    width: 100%;
+    font-size: 0;
+}
+.score-cont {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    right:0;
+    font: 12px Helvetica, sans-serif; 
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color:rgb(62, 46, 34)
+
+}
+.action {
+    width: 33.3%;
+    display: inline-block;
+    font: 14px Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    transition: padding 300ms;
+}
+.action:hover{
+    padding: 12px;
+}
+.score-cont .stars img {
+    height: 100%;
+    float: right;
+    
+}
+.score-cont .span {
+    line-height: 50px;
+}
+.score-cont .stars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 13px;
+    box-sizing: border-box;
+    height: 100%;
+    cursor: pointer;
+}
+.stars .star {
+    opacity: 0.7;
+    transition-duration: 300ms;
+}
+
+.stars .star:hover {
+    content: url('./../img/estrella-sel.svg');
+    height: 115%;
+    opacity: 1;
+    
+}
+#waiter img:hover {
+    content:url('./../img/campana_sel.svg');
+}
+
+#ticket img:hover {
+    content:url('./../img/cuenta_sel.svg');
+}
+
+#cancel img:hover {
+    content: url('./../img/cancelar_sel.svg');
+}
+
+.stars star:hover ~ .star {
+    content:url('./../img/estrella-sel.svg');
+}
+
+
+
+
